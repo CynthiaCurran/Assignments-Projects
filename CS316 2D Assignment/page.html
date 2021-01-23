@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Polygons</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/geometric@2.2.4/build/geometric.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reinvented-color-wheel@0.2.10/css/reinvented-color-wheel.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/reinvented-color-wheel@0.2.10"></script>
+  </head>
+  <body> <!--When the page is changed, the canvas has to change too-->
+
+    <!--Page header-->
+    <div class="header">
+      <h3>Interactive Polygons</h3>
+    </div>
+
+    <!--Page contents-->
+    <div class="row">
+
+      <!--Mode Selection Menu-->
+      <div class="side">
+        <p id="mode" style="color: #ffffff; font-size: 20px;">Current Mode: Create Polygon</p>
+        <button id="createButton" style="width: 100%">Create Polygon</button>
+        <br>
+        <button id="finishButton" disabled style="width: 100%">Finish Polygon</button>
+        <br>
+        <button id="translateButton" style="width: 100%">Translate</button>
+        <br>
+        <button id="rotateButton" style="width: 100%">Rotate</button>
+        <br>
+        <button id="scaleButton" style="width: 100%">Scale</button>
+        <br>
+        <button id="deleteButton" style="width: 100%">Delete</button>
+        <br>
+        <button id="clearButton" style="width: 100%">Clear Canvas</button>
+        <br>
+        <br>
+        <div id="wheelContainer">
+        </div>
+        <br>
+        <label for="lineWidth" style="color: #ffffff;">Line Width (Goes from 0 to 100)</label>
+        <input type="number" id="lineWidth" name="lineWidth" min="0" max="100" value="5">
+      </div>
+
+
+
+      <!--Canvas Display-->
+      <div class="main" id="main">
+        <canvas id="canvas" width="1000", height="700"></canvas>
+      </div>
+
+
+
+    </div>
+
+
+    <footer>
+      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript" src="eventListeners.js"></script>
+    </footer>
+
+
+  </body>
+</html>

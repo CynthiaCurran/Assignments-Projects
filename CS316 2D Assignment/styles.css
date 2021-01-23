@@ -1,0 +1,35 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: #6b6a69;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #33aaff;
+  color: #ffffff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 15%;
+  padding: 10px;
+}
+
+.main {
+  flex: 85%;
+  padding: 10px;
+}
+
+.wheelContainer{
+  padding: 15px;
+}
