@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Maze Generator & Solver</title>
+
+  </head>
+  <body>
+    <h1>Maze Generator & Solver</h1>
+    <canvas id="canvas" width="700" height="700"></canvas>
+
+    <br>
+
+    <label for="mazeWidth">Maze Width (Goes from 5 to 100): </label>
+    <input type="number" id="mazeWidth" name="mazeWidth" min="5" max="100" value="10">
+
+    <br>
+
+    <label for="mazeLength">Maze Length (Goes from 5 to 100): </label>
+    <input type="number" id="mazeLength" name="mazeLength" min="5" max="100" value="10">
+
+    <br>
+
+    <button id="createMazeButton">Create Maze</button>
+
+    <br>
+
+    <button id="solveMazeButton" disabled>Solve Maze</button>
+
+  </body>
+
+  <footer>
+    <script src="point.js"></script>
+    <script src="mazeGenerator.js"></script>
+    <script src="mazeSolver.js"></script>
+    <script src="eventListeners.js"></script>
+
+  </footer>
+</html>
